@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap-material-design.min.css"
+    integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <title>CMA Seguros para vos</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky sticky-top bg-primay">
+    <a class="navbar-brand text-primary" href="envios.html">El seguro que buscas esta aqui</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link " href="index.html">Tel 0800-333-6969<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:tommalieni@hotmail.com">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Seguros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Casa</a>
+            <a class="dropdown-item" href="#">Trabajo</a>
+            <a class="dropdown-item" href="#">Viaje</a>
+            <a class="dropdown-item" href="#">Vida</a>
+            <a class="dropdown-item" href="#">Negocios</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Vehiculos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a id="boton" class="nav-link text-primary" href="#" tabindex="-1" aria-disabled="true">Cotizador on line</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <div class="logo">
+    <img src="/img/images (3).jpg" alt="logo">
+    <h1 class="letraL">CMA Seguros</h1>
+  </div>
+  <div id="texto1" class="texTipo">
+    <p class="texBasico">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Porro magnam amet distinctio aut. Sunt ea, hic atque voluptate exercitationem, 
+      illo deserunt asperiores consequatur a tempore eius dolorem magni aliquid voluptas?
+    </p>
+    <p class="texCompleto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, molestias repellendus.
+       Iure explicabo vel corporis dicta consectetur earum optio sequi est autem illum, error eos 
+       rem incidunt dolores dolorum quae!
+    </p>    
+  </div>
+  <input type="button" id="botonTipos" value="Tipos de Seguros">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-8 mr-md-auto ml-md-auto">
+        <div id="contenido">
+          <header>
+            <h1 id="formulario" class="text-center">Cotiza tu seguro</h1>
+          </header>
+          <div class="row contenido-formulario">
+            <div class="col col-md-10 mr-md-auto ml-md-auto">
+              <form action="#" id="cotizar-seguro">
+
+                <div class="form-group">
+                  <label for="marca">Tipo de vehiculo:</label>
+                  <select class="form-control" id="marca">
+                    <option value="">- Seleccionar -</option>
+                    <option value="1">Camioneta</option>
+                    <option value="2">Auto</option>
+                    <option value="3">Moto</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="anio">Año:</label>
+                  <select class="form-control" id="anio">
+                    <option value="">- Seleccionar -</option>
+
+                  </select>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-legend col-12">Tipo de Seguro</legend>
+
+                    <div class="col12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="tipo" value="basico" checked>
+                          Básico
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="tipo" value="completo">
+                          Completo
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div id="cargando">
+                  <img src="img/spinner.gif">
+                </div>
+                <div id="resultado"></div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-raised btn-primary">Cotiza ahora
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--#contenido-->
+      </div>
+    </div>
+  </div>
+  <div class="fotosSeguro">
+    <ul class="fotosSeguroLista">      
+      <li>
+        <img src="img/images (2).jpg" alt="imagen de ahorro en el seguro">
+      </li>
+      <li>
+        <img src="img/images (5).jpg" alt="foto auto VW gol rojo">
+      </li>
+      <li>
+        <img src="img/images.jpg" alt="cotiza en segundos">
+      </li>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+
+      <li>
+        <p>2020 copyright CMA Seguros JMA</p>
+      </li>
+      <li>
+        <p>Todos los derechos reservados</p>
+      </li>
+      <li>
+        <p>power By Jawi Malieni/Coder House</p>
+      </li>
+      <li>
+        <p>tommalieni@hotmail.com</p>
+      </li>
+      
+    </ul>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap-material-design.js"
+    integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe"
+    crossorigin="anonymous"></script>
+  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+
+  <script src="js/appes6.js"></script>
+</body>
+
+</html>
